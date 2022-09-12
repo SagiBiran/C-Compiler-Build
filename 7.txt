@@ -1,0 +1,21 @@
+real f3(real y2)
+{
+    var int x2;
+    x2 = 22;
+    if (x2 == 22)
+        x2 = 33;
+    else
+        x2 = 99;
+    return x2 + y2;
+}
+
+void main()
+{
+    var real x1, y1;
+    x1 = 15.55;
+    while (x1 < 111)
+    {
+        y1 = f3(5.45);
+        x1 = x1 + y1;
+    }
+}

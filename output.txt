@@ -1,0 +1,24 @@
+ f3:
+	BeginFunc‬‬
+	x2 = 22  
+	if x2 == 22 goto L0
+	goto L1
+    L0: x2 = 33  
+	goto L2
+    L1: x2 = 99  
+    L2: t0 = x2 + y2
+	return t0   
+	EndFunc
+ Main:
+	BeginFunc‬‬
+	x1 = 15.55  
+    L3: if x1 < 111 goto L4
+	goto L5
+    L4: PushParam 5.45
+	t1 = LCALL f3
+‪	popParameters 8‬‬‬‬
+	y1 = t1  
+	t2 = x1 + y1
+	x1 = t2  
+	goto L3
+    L5: EndFunc
